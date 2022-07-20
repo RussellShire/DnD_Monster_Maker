@@ -3,20 +3,25 @@ import { backstory } from './backstory.js';
 
 //A class for making monsters
 class Monsters {
-    constructor (type, size, alignment) {
+    constructor (race, type, size, alignment) {
+        this.race = race;
         this.type = type;
         this.size = size;
         this.alignment = alignment;
         this.backstory = backstory(); //This function is in another module
         }
     get topLine() {
-        return `A ${this.size} ${this.type}, they are ${this.alignment}.`;
+        return `${this.race}s: Are ${this.size} ${this.type}s, they are ${this.alignment}.`;
         }
 }
           
 //creating some monsters
-const goblin = new Monsters('humaniod', 'small', 'neutral evil');
-const orc = new Monsters('humaniod', 'medium', 'chaotic evil');
+const goblin = new Monsters('Goblin', 'humaniod', 'small', 'neutral evil');
+const orc = new Monsters('Orc', 'humaniod', 'medium', 'chaotic evil');
 
 console.log(`${goblin.topLine} 
 ${goblin.backstory}`)
+
+console.log(`${orc.topLine} 
+${orc.backstory}`)
+
