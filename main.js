@@ -1,3 +1,5 @@
+//Dnd Stats from here https://roll20.net/compendium/dnd5e/Orc#h-Orc
+
 //Bringing in a complicated function from another module
 import { backstory } from './backstory.js';
 
