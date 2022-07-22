@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <header>
-    <h1>Monster Maker</h1>
+    <h1 id="head">Monster Maker</h1>
 </header> 
 <body>
-    <form id="form" action="results.html" method="GET">
+    <form id="form" action="form-result.html" method="GET">
         <div class="form-box">
             <label for="name">Name</label>
         </div>
@@ -19,10 +20,10 @@
         </div>         
         <div class="form-box">
             <label for="monster-select">Monster Flavour</label>
-            <select name="monster-select" id="monster-select">
+            <div class="form-box"><select name="monster-select" id="monster-select">
                 <option value="orc" label="Orc"></option> 
-                <option value="goblin" label="Goblin"></option> 
-            </select>
+                <option value="goblin" label="Goblin"></option>           
+            </select></div>
         </div> 
         <div class="form-box">
             <button id="submit" type="submit">Make me a monster</button>

@@ -1,7 +1,7 @@
 const bsOpenPt1 = ['Despite being', 'After being', 'Because they were', 'Growing up', 'Coming of age', 'Entering their youth']
 const bsOpenPt2 = ['raised by', 'attacked by', 'robbed by', 'abandoned by', 'adopted by', 'trained by', 'schooled by', 'attacked by', 'influenced by']
 const bsAdjectives = ['incredible', 'terrifying','unhelpful', 'helpful', 'beautiful', 'hidious', 'brave', 'wild', 'interesting', 'flamboyant', 'nervous', 'intense', 'dangerous', 'aggresive', 'fantastic']
-const bsProfession = ['clown', 'drunk', 'labourer', 'sailor', 'lawyer', 'guard', 'chef', 'idiot', 'shop keeper', 'solider', 'parent', 'criminal', 'teenager', 'farmer', 'acrobat', 'servant', 'animal', 'priest', 'teacher', 'grave digger']
+const bsProfession = ['clown', 'drunk', 'labourer', 'sailor', 'lawyer', 'guard','programmer', 'chef', 'idiot', 'shop keeper', 'solider', 'parent', 'criminal', 'teenager', 'farmer', 'acrobat', 'servant', 'animal', 'priest', 'teacher', 'grave digger']
 const bsPastTenseAdj = ['struggled', 'fought bravely', 'failed', 'tried hard', 'learned', 'overcame adversity', 'cheated their way']
 const bsProfessionJoin = ['to become', 'to graduate as', 'to avoid becoming', 'to study as']
 const bsEnd = ['which led them here', 'so here they are', 'and now they are here', 'and that is why they are here', 'a tragic tale that led them here', 'which is why you find them here']
