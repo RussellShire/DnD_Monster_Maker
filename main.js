@@ -7,7 +7,8 @@ import { backstory } from './backstory.js';
 const button = document.getElementById('submit'),
     output = document.getElementById('output'),
     nameInput = document.getElementById('name'),
-    typeInput = document.querySelector('#monster-select');
+    typeInput = document.querySelector('#monster-select'),
+    dicePostion = document.getElementById('dice-position');
 
 // Form data collection, technically not currently being used, but could be used for persistence in the future
 let monsterName = '',
@@ -25,7 +26,9 @@ button.onclick = e => {
         nameInput.placeholder = 'Name another monster'
         monsterType = typeInput.value
         // outputs to the view
-        outputBio();       
+        outputBio();
+        // adds a dice next to the button to reroll
+        dicePostion.innerHTML ='<i class="fa-solid fa-dice-five fa-lg fashake" id="dice" ></i>';       
     }
 }
 
@@ -39,6 +42,13 @@ const outputBio = () => {
             output.innerText = goblinFactory(monsterName).bio
             break;
     }
+}
+
+// Dice icon character reroll
+dicePostion.onclick = e => {
+    //replaces Dice icon with an animated one
+    dicePostion.innerHTML = '<i id="dice" class="fa-solid fa-dice-five fa-shake fa-lg" style="--fa-animation-iteration-count: 1;"></i>'
+    outputBio();
 }
 
 //A class for making monsters
