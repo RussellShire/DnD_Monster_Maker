@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/871022bc8a.js" crossorigin="anonymous"></script> <!--font aweome icon kit-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bebas+Neue&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -12,30 +15,31 @@
     <h1 id="head">Monster Maker</h1>
 </header> 
 <body>
+    <div class="form-box">
     <form id="form" action="form-result.html" method="GET">
-        <div class="form-box">
-            <label for="name">Name</label>
+        <div class="form-item">
+            <label for="name" class="form-item" id="label">Name</label>
         </div>
-        <div class="form-box">
+        <div class="form-item">
             <input name="name" type="text" id="name" placeholder="Name your monster" required>
         </div>         
-        <div class="form-box">
-            <label for="monster-select">Monster Flavour</label></div>
+        <div class="form-item">
+            <label for="monster-select" class="form-item" id="label">Monster Flavour</label></div>
         
-        <div class="form-box">
+        <div class="form-item">
             <select name="monster-select" id="monster-select">
                 <option value="orc" label="Orc"></option> 
                 <option value="goblin" label="Goblin"></option>           
             </select>
         </div>
-         
-        <div class="form-box" id="button">
-            <button id="submit" type="submit">Make me a monster</button>
-            <div id="dice-position"></div>
-        </div>
-        
+        <div class="form-item" id="button">
+            <div class="button-position"><button id="submit" type="submit" class="button-19" role="button">Make me a monster</button></div>
+            <div class="button-position"></div><div id="dice-position" class="dice"></div></div>
+        </div>  
     </form>
+    </div>
     <p id="output"></p>
+    
     <script src="main.js" type="module"></script>
     <script src="backstory.js" type="module"></script>
 </body>

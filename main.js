@@ -28,7 +28,7 @@ button.onclick = e => {
         // outputs to the view
         outputBio();
         // adds a dice next to the button to reroll
-        dicePostion.innerHTML ='<i class="fa-solid fa-dice-five fa-lg fashake" id="dice" ></i>';       
+        dicePostion.innerHTML ='<i class="fa-solid fa-dice-five fa-2x fashake" id="dice" ></i>';       
     }
 }
 
@@ -47,7 +47,7 @@ const outputBio = () => {
 // Dice icon character reroll
 dicePostion.onclick = e => {
     //replaces Dice icon with an animated one
-    dicePostion.innerHTML = '<i id="dice" class="fa-solid fa-dice-five fa-shake fa-lg" style="--fa-animation-iteration-count: 1;"></i>'
+    dicePostion.innerHTML = '<i id="dice" class="fa-solid fa-dice-five fa-shake fa-2x" style="--fa-animation-iteration-count: 1;"></i>'
     outputBio();
 }
 
@@ -64,7 +64,9 @@ class Monsters {
         }
     get bio() {
         return `${this.name} is a ${this.race}, ${this.topLine} 
+
     ${this.backstory}
+    
     ${this.name} has ${this.hitpoints} hitpoints`
     }
 }
